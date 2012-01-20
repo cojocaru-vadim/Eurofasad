@@ -1,0 +1,45 @@
+<div class="body5">
+    <div class="body6">
+        <div class="main">
+            <div class="wrapper">
+                <figure class="left"><img src="images/letter5.png" alt=""></figure>
+                <h2>Your Comments Are <span>Highly Appreciated</span>!</h2>
+                Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis.</div>
+        </div>
+    </div>
+</div>
+<div class="body7">
+    <div class="main">
+        <section id="content">
+
+            <div class="wrapper">
+                <article class="col2">
+                    <div class="pad1">
+                        <h2>Contact Form</h2>
+                        <form id="ContactForm" method="post" action="/contact">
+                            <div>
+                                <div  class="wrapper">
+                                    <strong>Name:</strong>
+                                    <div class="bg"><input type="text" name="name" class="input" ></div>
+                                </div>
+                                <div  class="wrapper">
+                                    <strong>Email:</strong>
+                                    <div class="bg"><input type="text" name="email" class="input" >	</div>
+                                </div>
+                                <div  class="textarea_box">
+                                    <strong>Message:</strong>
+                                    <div class="bg"><textarea name="textarea" cols="1" rows="1"></textarea>		</div>
+                                </div>
+                                <a href="#" class="button" onClick="document.getElementById('ContactForm').submit()"><span><span>Send</span></span></a>
+                                <a href="#" class="button" onClick="document.getElementById('ContactForm').reset()"><span><span>Clear</span></span></a>
+                            </div>
+                        </form>
+                    </div>
+
+                </article>
+                <?php echo $this->render('sidebar.phtml');?>
+            </div>
+
+        </section>
+    </div>
+</div>
