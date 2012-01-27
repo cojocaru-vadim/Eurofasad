@@ -81,3 +81,13 @@ footer a:hover {}
 #ContactForm .input {width:260px;height:16px;background:none;padding:5px 10px;color:#323232;font:13px Arial,Helvetica,sans-serif;margin:0}
 #ContactForm textarea {overflow:auto;width:408px;height:181px;background:none;padding:5px 10px;color:#323232;font:13px Arial,Helvetica,sans-serif;margin:0}
 #ContactForm .button:hover {background:#696969}
+
+.theme-default #slider {
+    margin:100px auto 0 auto;
+    width:920px; /* Make sure your images are the same size */
+    height:246px; /* Make sure your images are the same size */
+}
+.theme-pascal.slider-wrapper,
+.theme-orman.slider-wrapper {
+    margin-top:150px;
+}
