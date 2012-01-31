@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="themes/pascal/pascal.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="themes/orman/orman.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/menu_core.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/menu_redBar.css" type="text/css" media="screen" />
     <script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
     <script type="text/javascript" src="js/cufon-yui.js"></script>
     <script type="text/javascript" src="js/cufon-replace.js"></script>
@@ -21,6 +23,7 @@
     <script type="text/javascript" src="js/html5.js"></script>
     <![endif]-->
     <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>
 </head>
 <body id="page1">
 <div class="main">
@@ -35,7 +38,7 @@
                 </div>
             </form>
         </div>
-        <nav>
+<!--        <nav>
             <ul id="menu">
                 <li class="alpha" id="menu_active"><a href="index.html"><span><span>Home</span></span></a></li>
                 <li><a href="About.html"><span><span>About</span></span> </a></li>
@@ -43,7 +46,56 @@
                 <li><a href="Contacts.html"><span><span>Contacts</span></span></a></li>
                 <li class="omega"><a href="Sitemap.html"><span><span>Sitemap</span></span></a></li>
             </ul>
-        </nav>
+        </nav>-->
+        <!-- Menu structure example -->
+        <div id="myMenu" class="nfPure nfMain" style="width:920px;">
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_home">Home</span></a></h2></div>
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_facade">Facade</span></a></h2>
+                <div class="nfSubC"><ul class="nfSubS">
+                    <li class="nfItem"><a class="nfLink" href="#">Siding</a></li>
+                    <li class="nfItem"><a class="nfLink" href="#">Sofit</a></li>
+                    <li class="nfItem"><a class="nfLink" href="#">Siding color chooser</a></li>
+                </div>
+            </div>
+
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_walls">Walls &amp; Roofs</span></a></h2>
+                <div class="nfSubC"><ul class="nfSubS">
+                    <li class="nfItem"><a class="nfLink" href="#">Accessory</a></li>
+                    <li class="nfItem"><a class="nfLink" href="#">PVC wall panels</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_windows">Windows</span></a></h2>
+                <div class="nfSubC"><ul class="nfSubS">
+                    <li class="nfItem"><a class="nfLink" href="#">PVC Window sills</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_pipes">PVC pipes</span></a></h2>
+                <div class="nfSubC"><ul class="nfSubS">
+                    <li class="nfItem"><a class="nfLink" href="#">Accessory</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_prices">Prices</span></a></h2></div>
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_company">Company</span></a></h2>
+                <div class="nfSubC"><ul class="nfSubS">
+                    <li class="nfItem"><a class="nfLink" href="#">About Company</a></li>
+                    <li class="nfItem"><a class="nfLink" href="#">Market outlet</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_phones">Contacts</span></a></h2></div>
+
+        </div>
         <div class="wrapper">
 <!--            <div class="text">
                 <span class="text1">Effective<span>business solutions</span></span>
@@ -163,6 +215,74 @@
     $(window).load(function() {
         $('#slider').nivoSlider();
     });
+</script>
+
+<!--Create a new menu object and activate it (place this script after the structure or attach to an onload type event)-->
+<script type="text/javascript">
+
+
+    //Menu configuration properties (hide and show timers in Milliseconds)
+    var config = {showTimerMS:250,hideTimerMS:250,stickyHover:true};
+
+    //Pass the menu object construcor an ID or object representing the root node of your structure
+    var myMenu = new NF.widget.menu("myMenu", config);
+
+    //set the default delay timer for the menus playerSynchronizer animations
+    NF.anim.playerSynchronizer.delay = 15;
+
+
+    /*~~~~~~~~ Hover Effect - Level 1~~~~~~~~~~~~~*/
+    var hovClip = new NF.anim.clip({backgroundColor:{start:"#000000",end:"#990101"}},{frames:5,hook:"NFplayOnLinkHoverShow"});
+    myMenu.addReplicator(new NF.replicator("transition",{master:hovClip,widgetClass:"nfItem",targetClass:"nfLink",widgetLevel:"level==1"}));
+
+    hovClip = new NF.anim.clip({backgroundColor:{start:"#990101",end:"#000000"}},{frames:40,hook:"NFplayOnLinkHoverHide"});
+    myMenu.addReplicator(new NF.replicator("transition",{master:hovClip,widgetClass:"nfItem",targetClass:"nfLink",widgetLevel:"level==1"}));
+
+
+    /*~~~~~~~~ Hover Effect - Level 2~~~~~~~~~~~~~*/
+    var hovClip = new NF.anim.clip({backgroundColor:{start:"#222222",end:"#990101"}},{frames:5,reset:true,hook:"NFplayOnLinkHoverShow"});
+    myMenu.addReplicator(new NF.replicator("transition",{master:hovClip,widgetClass:"nfItem",targetClass:"nfLink",widgetLevel:"level==2"}));
+
+    hovClip = new NF.anim.clip({backgroundColor:{start:"#990101",end:"#222222"}},{frames:40,reset:true,hook:"NFplayOnLinkHoverHide"});
+    myMenu.addReplicator(new NF.replicator("transition",{master:hovClip,widgetClass:"nfItem",targetClass:"nfLink",excludeClass:"nfParentLink",widgetLevel:"level==2"}));
+
+
+    /*~~~~~~~~ Show Subs Effect - Lev 1 ~~~~~~~~~~~~~*/
+    var clip = new NF.anim.clip({opacity:{start:0, end:1}}, {frames:10,reset:true,hook:"NFplayOnSubShow"});
+    var subAnim_Show_Replicator = new NF.replicator("transition", {master:clip,widgetClass:"nfSubC",widgetLevel:'level==1'});
+    myMenu.addReplicator(subAnim_Show_Replicator);
+
+
+    /*~~~~~~~~ Hide Subs Effect - Lev 1 ~~~~~~~~~~~~~*/
+    clip = new NF.anim.clip({opacity:{start:1, end:0}}, {frames:10,reset:true,hook:"NFplayOnSubHide"});
+    var subAnim_Hide_Replicator = new NF.replicator("transition", {master:clip,widgetClass:"nfSubC",widgetLevel:'level==1'});
+    myMenu.addReplicator(subAnim_Hide_Replicator);
+
+
+    /*~~~~~~~~ Show Subs Effect - Lev 2+ ~~~~~~~~~~~~~*/
+    var clip1 = new NF.anim.clip({opacity:{start:0, end:1}}, {frames:10,reset:true,hook:"NFplayOnSubShow"});
+    var clip2 = new NF.anim.clip({clip:{start:{value:'0% 0% 0% 0%', refNode:"self"}, end:{value:'0% 100% 100% 0%', refNode:"self"}}}, {frames:12,reset:true,hook:"NFplayOnSubShow"});
+    var timeline = new NF.anim.timeline(clip1,'NFplayOnSubShow');
+    timeline.addTrack(clip2);
+    var subAnim_Show_Replicator = new NF.replicator("transition", {master:timeline,widgetClass:"nfSubC",widgetLevel:'level>1'});
+    myMenu.addReplicator(subAnim_Show_Replicator);
+
+
+    /*~~~~~~~~ Hide Subs Effect - Lev 2+ ~~~~~~~~~~~~~*/
+    clip1 = new NF.anim.clip({opacity:{start:1, end:0}}, {frames:10,reset:true,hook:"NFplayOnSubHide"});
+    clip2 = new NF.anim.clip({clip:{start:{value:'0% 100% 100% 0%', refNode:"self"}, end:{value:'0% 0% 0% 0%', refNode:"self"}}}, {frames:12,reset:true,hook:"NFplayOnSubHide"});
+    timeline = new NF.anim.timeline(clip1,'NFplayOnSubHide');
+    timeline.addTrack(clip2);
+    var subAnim_Hide_Replicator = new NF.replicator("transition", {master:timeline,widgetClass:"nfSubC",widgetLevel:'level>1'});
+    myMenu.addReplicator(subAnim_Hide_Replicator);
+
+
+    //Activate the menu
+    myMenu.activate();
+
+
+
+
 </script>
 </body>
 </html>
