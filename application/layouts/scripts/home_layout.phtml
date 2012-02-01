@@ -31,12 +31,31 @@
     <header>
         <div class="wrapper">
             <h1><a href="index.html" id="logo">Smart Biz</a></h1>
-            <form id="search" action="" method="post">
-                <div class="bg">
-                    <input type="submit" class="submit" value="">
-                    <input type="text" class="input">
+            <div id="locale">
+                <a href="<?php echo $this->url(array('module' => 'default', 'controller' => 'locale', 'action' => 'index', 'locale' => 'ro_MD'), 'default', true); ?>">
+                    <img src="/images/locale/ro_MD.png" />
+                </a>
+                <a href="<?php echo $this->url(array('module' => 'default', 'controller' => 'locale', 'action' => 'index', 'locale' => 'ru_RU'), 'default', true); ?>">
+                    <img src="/images/locale/ru_RU.png" />
+                </a>
+                <a href="<?php echo $this->url(array('module' => 'default', 'controller' => 'locale', 'action' => 'index', 'locale' => 'en_US'), 'default', true); ?>">
+                    <img src="/images/locale/en_US.png" />
+                </a>
+
+            </div>
+        </div>
+        <div class="wrapper">
+            <!--            <div class="text">
+                <span class="text1">Effective<span>business solutions</span></span>
+                <a href="#" class="button">read more</a>
+            </div>-->
+            <div class="slider-wrapper theme-default">
+                <div class="ribbon"></div>
+                <div id="slider" class="nivoSlider">
+                    <img src="images/Untitled.jpg" alt="" />
+                    <img src="images/Untitled1.jpg" alt="" />
                 </div>
-            </form>
+            </div>
         </div>
 <!--        <nav>
             <ul id="menu">
@@ -95,20 +114,6 @@
 
             <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_phones">Contacts</span></a></h2></div>
 
-        </div>
-        <div class="wrapper">
-<!--            <div class="text">
-                <span class="text1">Effective<span>business solutions</span></span>
-                <a href="#" class="button">read more</a>
-            </div>-->
-            <div class="slider-wrapper theme-default">
-                <div class="ribbon"></div>
-                <div id="slider" class="nivoSlider">
-                    <img src="images/Untitled.jpg" alt="" />
-                    <img src="images/Untitled2.jpg" alt="" />
-                    <img src="images/Untitled3.jpg" alt="" />
-                </div>
-            </div>
         </div>
     </header><div class="ic">More Website Templates at TemplateMonster.com!</div>
     <!-- / header -->
