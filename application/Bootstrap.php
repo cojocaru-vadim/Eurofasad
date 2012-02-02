@@ -50,25 +50,37 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $this->bootstrap('View');
         $view = $this->getResource('View');
         $view->addScriptPath(APPLICATION_PATH . '/layouts/scripts');
-        $view->doctype('XHTML1_STRICT');
+        //$view->doctype('XHTML1_STRICT');
 
         // Set the initial title and separator:
         $view->headTitle($this->view->translate('page-title'))->setSeparator(' - ');
 
         // Set the initial stylesheet:
-        $view->headLink()->appendStylesheet('/css/styles.css');
-        //$view->headLink()->appendStylesheet('/css/tipsy.css');
-        //$view->headLink()->appendStylesheet('/css/forms.css');
-        //$view->headLink()->appendStylesheet('/css/nivo-slider.css');
+        $view->headLink()->appendStylesheet('/css/reset.css');
+        $view->headLink()->appendStylesheet('/css/layout.css');
+        $view->headLink()->appendStylesheet('/css/style.css');
+        $view->headLink()->appendStylesheet('/themes/default/default.css');
+        $view->headLink()->appendStylesheet('/css/nivo-slider.css');
+        $view->headLink()->appendStylesheet('/css/menu_core.css');
+        $view->headLink()->appendStylesheet('/css/menu_redBar.css');
+
+
 
         // Set the initial JS to load:
-
-
-        $view->headScript()->appendFile('https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js');
+        $view->headScript()->appendFile('/js/jquery-1.7.1.min.js');
+        $view->headScript()->appendFile('/js/cufon-yui.js');
+        $view->headScript()->appendFile('/js/cufon-replace.js');
+        $view->headScript()->appendFile('/js/Myriad_Pro_400.font.js');
+        $view->headScript()->appendFile('/js/Myriad_Pro_700.font.js');
+        $view->headScript()->appendFile('/js/Myriad_Pro_600.font.js');
+        $view->headScript()->appendFile('/js/jquery.nivo.slider.pack.js');
+        $view->headScript()->appendFile('/js/api.js');
+        $view->headScript()->appendFile('/js/script.js');
+        //$view->headScript()->appendFile('https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js');
         //$view->headScript()->appendFile('https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js');
         //$view->headScript()->appendFile('/js/jquery.tipsy.js');
         //$view->headScript()->appendFile('/js/jquery.nivo.slider.pack.js');
-        $view->headScript()->appendFile('/js/script.js');
+        //$view->headScript()->appendFile('/js/script.js');
         //$view->headScript()->appendFile('http://www.openlayers.org/api/OpenLayers.js');
 
 

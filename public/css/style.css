@@ -39,7 +39,7 @@ header {}
 .text .button {display:inline-block;font-size:30px;font-weight:700;color:#fff;line-height:53px;padding:0 37px;background:url(../images/button_bg.gif) top repeat-x #308da2;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;behavior:url(js/PIE.htc);position:relative;text-decoration:none}
 .text .button:hover {background:#696969}
 /* content */
-#content {margin-right:4px;background:url(../images/bg_cont.gif) bottom repeat-x #fff;border:1px solid #ccc;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;box-shadow:1px 1px 2px #cfcfcf;-moz-box-shadow:1px 1px 2px #cfcfcf;-webkit-box-shadow:1px 1px 2px #cfcfcf;behavior:url(js/PIE.htc);position:relative}
+#content {margin-top:10px;margin-right:0px;background:url(../images/bg_cont.gif) bottom repeat-x #fff;border:1px solid #ccc;/*border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;*/box-shadow:1px 1px 2px #cfcfcf;-moz-box-shadow:1px 1px 2px #cfcfcf;-webkit-box-shadow:1px 1px 2px #cfcfcf;behavior:url(js/PIE.htc);position:relative}
 .pad {padding:0 30px 0 35px}
 .pad_left1 {padding-left:55px}
 .pad_left2 {padding-left:45px}

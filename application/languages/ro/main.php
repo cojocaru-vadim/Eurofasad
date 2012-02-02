@@ -3,6 +3,6 @@
 return array(
     
 /************************ GENERAL ***********************/
-    'pages'                 => 'Pagini',
+    'page-title'                 => 'Eurofasad',
 
 );
