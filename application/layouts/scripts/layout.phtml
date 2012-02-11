@@ -1,130 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>BS code</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-    <script type="text/javascript" src="js/jquery-1.4.2.js" ></script>
-    <script type="text/javascript" src="js/cufon-yui.js"></script>
-    <script type="text/javascript" src="js/cufon-replace.js"></script>
-    <script type="text/javascript" src="js/Copse_400.font.js"></script>
-    <script type="text/javascript" src="js/imagepreloader.js"></script>
-    <script type="text/javascript">
-        preloadImages([
-            'images/menu1_active.gif',
-            'images/menu2_active.gif',
-            'images/menu3_active.gif',
-            'images/menu4_active.gif',
-            'images/menu5_active.gif']);
-    </script>
+
+    <?php echo $this->headTitle() ?>
+    <?php echo $this->headLink() ?>
+    <?php echo $this->headScript() ?>
+
     <!--[if lt IE 9]>
     <script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script_other.js"></script>
     <script type="text/javascript" src="js/html5.js"></script>
     <![endif]-->
+<!--    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>-->
 </head>
-<body id="page3">
-<div class="body1">
-    <div class="body2">
-        <div class="main">
-            <!-- header -->
-            <header>
-                <div class="wrapper">
-                    <h1><a href="index.html" id="logo">bs-code</a></h1>
-                    <div class="right">
-                       <!-- <nav>
-                            <ul id="top_nav">
-                                <li><a href="#">User Area</a></li>
-                                <li><a href="#">Sitemap</a></li>
-                            </ul>
-                            <form id="search" method="post">
-                                <div>
-                                    <input type="submit" class="submit" value="">
-                                    <input type="text" class="input">
-                                </div>
-                            </form>
-                        </nav>-->
-                    </div>
-                </div>
-<!--                <nav id="menu">
-                    <?php /*echo  $this->navigation()->menu(); */?>
-                </nav>-->
-                <nav id="menu">
-                    <ul>
-                        <li class="nav1"><a href="/">Home</a></li>
-                        <li class="nav2"><a href="/about">About</a></li>
-                        <li class="nav3"><a href="/services">Services</a></li>
-                        <li class="nav4"><a href="/products">Products</a></li>
-                        <li class="nav5"><a href="/contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header><!--<div class="ic">More Website Templates at TemplateMonster.com!</div>-->
+<body id="page1">
+<div class="main">
+    <!-- header -->
+    <header>
+        <div class="wrapper">
+            <h1><a href="index.html" id="logo">Smart Biz</a></h1>
+            <div id="locale">
+                <a href="<?php echo $this->url(array('module' => 'default', 'controller' => 'locale', 'action' => 'index', 'locale' => 'ro_MD'), 'default', true); ?>">
+                    <img src="/images/locale/ro_MD.png" />
+                </a>
+                <a href="<?php echo $this->url(array('module' => 'default', 'controller' => 'locale', 'action' => 'index', 'locale' => 'ru_RU'), 'default', true); ?>">
+                    <img src="/images/locale/ru_RU.png" />
+                </a>
+                <a href="<?php echo $this->url(array('module' => 'default', 'controller' => 'locale', 'action' => 'index', 'locale' => 'en_US'), 'default', true); ?>">
+                    <img src="/images/locale/en_US.png" />
+                </a>
+
+            </div>
         </div>
-    </div>
-</div>
-<!-- / header -->
-<!-- content -->
-<?php echo $this->layout()->content; ?>
-<!-- / content -->
-<!-- footer -->
-<div class="body8">
-    <div class="body9">
-        <div class="main">
-            <footer>
-                <div class="col_1">
-                    <h3>Social Networks</h3>
-                    <ul class="list3">
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Flickr</a></li>
-                        <li><a href="#">Blogger</a></li>
-                    </ul>
+        <div class="wrapper">
+            <!--            <div class="text">
+                <span class="text1">Effective<span>business solutions</span></span>
+                <a href="#" class="button">read more</a>
+            </div>-->
+            <div class="slider-wrapper theme-default">
+                <div class="ribbon"></div>
+                <div id="slider" class="nivoSlider">
+                    <img src="images/Untitled.jpg" alt="" />
+                    <img src="images/Untitled1.jpg" alt="" />
                 </div>
-                <div class="col_2 pad_left1">
-                    <h3>Quick Solutions</h3>
-                    <div class="wrapper">
-                        <ul class="list3 col_1">
-                            <li><a href="#">Management Consulting</a></li>
-                            <li><a href="#">Policy and Regulatory</a></li>
-                            <li><a href="#">Market Assessment</a></li>
-                            <li><a href="#">Program Management</a></li>
-                        </ul>
-                        <ul class="list3 col_1 pad_left1">
-                            <li><a href="#">Regulatory Support</a></li>
-                            <li><a href="#">Risk Assessment</a></li>
-                            <li><a href="#">Change Management</a></li>
-                            <li><a href="#">Info Technology</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col_3">
-                    <a href="index.html" id="footer_logo">First</a>
-                    <p class="center"><a rel="nofollow" href="http://www.templatemonster.com/" target="_blank">Website template</a><br>designed by TemplateMonster.com</p>
-                    <p class="center"><a href="http://www.templates.com/product/3d-models/" target="_blank">3D Models</a><br>provided by Templates.com</p>
-                </div>
-            </footer>
+            </div>
         </div>
-        <!-- / footer -->
-    </div>
+<!--        <nav>
+            <ul id="menu">
+                <li class="alpha" id="menu_active"><a href="index.html"><span><span>Home</span></span></a></li>
+                <li><a href="About.html"><span><span>About</span></span> </a></li>
+                <li><a href="Projects.html"><span><span>Projects</span></span></a></li>
+                <li><a href="Contacts.html"><span><span>Contacts</span></span></a></li>
+                <li class="omega"><a href="Sitemap.html"><span><span>Sitemap</span></span></a></li>
+            </ul>
+        </nav>-->
+        <!-- Menu structure example -->
+        <div id="myMenu" class="nfPure nfMain" style="width:920px;">
+
+            <div class="nfItem"><h2><a class="nfLink" href="/"><span id="gn_home">Home</span></a></h2></div>
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_facade">Facade</span></a></h2>
+                <div class="nfSubC"><ul class="nfSubS">
+                    <li class="nfItem"><a class="nfLink" href="/siding">Siding</a></li>
+                    <li class="nfItem"><a class="nfLink" href="#">Sofit</a></li>
+                    <li class="nfItem"><a class="nfLink" href="/siding-color-chooser">Siding color chooser</a></li>
+                </div>
+            </div>
+
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_walls">Walls &amp; Roofs</span></a></h2>
+                <div class="nfSubC"><ul class="nfSubS">
+                    <li class="nfItem"><a class="nfLink" href="#">Accessory</a></li>
+                    <li class="nfItem"><a class="nfLink" href="#">PVC wall panels</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_windows">Windows</span></a></h2>
+                <div class="nfSubC"><ul class="nfSubS">
+                    <li class="nfItem"><a class="nfLink" href="#">PVC Window sills</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_pipes">PVC pipes</span></a></h2>
+                <div class="nfSubC"><ul class="nfSubS">
+                    <li class="nfItem"><a class="nfLink" href="#">Accessory</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_prices">Prices</span></a></h2></div>
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_company">Company</span></a></h2>
+                <div class="nfSubC"><ul class="nfSubS">
+                    <li class="nfItem"><a class="nfLink" href="#">About Company</a></li>
+                    <li class="nfItem"><a class="nfLink" href="#">Market outlet</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="nfItem"><h2><a class="nfLink" href="#"><span id="gn_phones">Contacts</span></a></h2></div>
+
+        </div>
+    </header>
+    <!-- / header -->
+    <!-- content -->
+    <section id="content">
+        <?php echo $this->layout()->content ?>
+    </section>
+    <!-- / content -->
+    <!-- footer -->
+    <footer>
+        <a href="/">&copy; <?php echo date('Y'); ?> Eurofasad</a><br />
+    </footer>
+    <!-- / footer -->
 </div>
+<script type="text/javascript"> Cufon.now(); </script>
 <script type="text/javascript">
-    Cufon.now();
-    $(document).ready(function(){
-        var fullPathname = window.location.pathname;
-        var arrayPathname = fullPathname.split("/");
-        //console.log(arrayPathname[1]);
-        $('#menu ul li').each(function(index) {
-            $(this).addClass("nav"+(index+1));
-            var fulllink = $(this).find('a').attr('href');
-            var arraylink = fulllink.split("/");
-            //console.log(arraylink[1]);
-            if(arrayPathname[1] == arraylink[1]){
-                $(this).attr('id', 'active');
-            }
-        });
-        //console.log(res);
+    $(window).load(function() {
+        $('#slider').nivoSlider();
     });
+</script>
+
+<!--Create a new menu object and activate it (place this script after the structure or attach to an onload type event)-->
+<script type="text/javascript">
+
+
+    //Menu configuration properties (hide and show timers in Milliseconds)
+    var config = {showTimerMS:250,hideTimerMS:250,stickyHover:true};
+
+    //Pass the menu object construcor an ID or object representing the root node of your structure
+    var myMenu = new NF.widget.menu("myMenu", config);
+
+    //set the default delay timer for the menus playerSynchronizer animations
+    NF.anim.playerSynchronizer.delay = 15;
+
+
+    /*~~~~~~~~ Hover Effect - Level 1~~~~~~~~~~~~~*/
+    var hovClip = new NF.anim.clip({backgroundColor:{start:"#000000",end:"#990101"}},{frames:5,hook:"NFplayOnLinkHoverShow"});
+    myMenu.addReplicator(new NF.replicator("transition",{master:hovClip,widgetClass:"nfItem",targetClass:"nfLink",widgetLevel:"level==1"}));
+
+    hovClip = new NF.anim.clip({backgroundColor:{start:"#990101",end:"#000000"}},{frames:40,hook:"NFplayOnLinkHoverHide"});
+    myMenu.addReplicator(new NF.replicator("transition",{master:hovClip,widgetClass:"nfItem",targetClass:"nfLink",widgetLevel:"level==1"}));
+
+
+    /*~~~~~~~~ Hover Effect - Level 2~~~~~~~~~~~~~*/
+    var hovClip = new NF.anim.clip({backgroundColor:{start:"#222222",end:"#990101"}},{frames:5,reset:true,hook:"NFplayOnLinkHoverShow"});
+    myMenu.addReplicator(new NF.replicator("transition",{master:hovClip,widgetClass:"nfItem",targetClass:"nfLink",widgetLevel:"level==2"}));
+
+    hovClip = new NF.anim.clip({backgroundColor:{start:"#990101",end:"#222222"}},{frames:40,reset:true,hook:"NFplayOnLinkHoverHide"});
+    myMenu.addReplicator(new NF.replicator("transition",{master:hovClip,widgetClass:"nfItem",targetClass:"nfLink",excludeClass:"nfParentLink",widgetLevel:"level==2"}));
+
+
+    /*~~~~~~~~ Show Subs Effect - Lev 1 ~~~~~~~~~~~~~*/
+    var clip = new NF.anim.clip({opacity:{start:0, end:1}}, {frames:10,reset:true,hook:"NFplayOnSubShow"});
+    var subAnim_Show_Replicator = new NF.replicator("transition", {master:clip,widgetClass:"nfSubC",widgetLevel:'level==1'});
+    myMenu.addReplicator(subAnim_Show_Replicator);
+
+
+    /*~~~~~~~~ Hide Subs Effect - Lev 1 ~~~~~~~~~~~~~*/
+    clip = new NF.anim.clip({opacity:{start:1, end:0}}, {frames:10,reset:true,hook:"NFplayOnSubHide"});
+    var subAnim_Hide_Replicator = new NF.replicator("transition", {master:clip,widgetClass:"nfSubC",widgetLevel:'level==1'});
+    myMenu.addReplicator(subAnim_Hide_Replicator);
+
+
+    /*~~~~~~~~ Show Subs Effect - Lev 2+ ~~~~~~~~~~~~~*/
+    var clip1 = new NF.anim.clip({opacity:{start:0, end:1}}, {frames:10,reset:true,hook:"NFplayOnSubShow"});
+    var clip2 = new NF.anim.clip({clip:{start:{value:'0% 0% 0% 0%', refNode:"self"}, end:{value:'0% 100% 100% 0%', refNode:"self"}}}, {frames:12,reset:true,hook:"NFplayOnSubShow"});
+    var timeline = new NF.anim.timeline(clip1,'NFplayOnSubShow');
+    timeline.addTrack(clip2);
+    var subAnim_Show_Replicator = new NF.replicator("transition", {master:timeline,widgetClass:"nfSubC",widgetLevel:'level>1'});
+    myMenu.addReplicator(subAnim_Show_Replicator);
+
+
+    /*~~~~~~~~ Hide Subs Effect - Lev 2+ ~~~~~~~~~~~~~*/
+    clip1 = new NF.anim.clip({opacity:{start:1, end:0}}, {frames:10,reset:true,hook:"NFplayOnSubHide"});
+    clip2 = new NF.anim.clip({clip:{start:{value:'0% 100% 100% 0%', refNode:"self"}, end:{value:'0% 0% 0% 0%', refNode:"self"}}}, {frames:12,reset:true,hook:"NFplayOnSubHide"});
+    timeline = new NF.anim.timeline(clip1,'NFplayOnSubHide');
+    timeline.addTrack(clip2);
+    var subAnim_Hide_Replicator = new NF.replicator("transition", {master:timeline,widgetClass:"nfSubC",widgetLevel:'level>1'});
+    myMenu.addReplicator(subAnim_Hide_Replicator);
+
+
+    //Activate the menu
+    myMenu.activate();
+
+
+
+
 </script>
 </body>
 </html>

@@ -56,6 +56,7 @@ header {}
 .box.bot {border-radius:0 0 11px 11px ;-moz-border-radius:0 0 11px 11px;-webkit-border-radius:0 0 11px 11px;behavior:url(js/PIE.htc)}
 .banners {padding:19px 0 19px 19px;overflow:hidden}
 .banners li {width:210px;float:left;padding-right:12px}
+.banners2 li {width:127px;float:left;padding-right:0px}
 .banners p {padding-bottom:7px}
 .banners p.font1 {font-weight:bold;color:#318ea2;padding:16px 0 7px 0}
 .banners .marker {background:url(../images/marker_1.gif) no-repeat}
