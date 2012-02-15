@@ -1,6 +1,6 @@
 <?php
 
-class AboutController extends Zend_Controller_Action
+class SidingColorChooserController extends Zend_Controller_Action
 {
 
     public function preDispatch(){

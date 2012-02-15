@@ -14,7 +14,7 @@ class LocaleController extends Zend_Controller_Action
     public function indexAction()
     {
         // if supported locale, add to session
-        if (Zend_Validate::is( $this->getRequest()->getParam('locale'),  'InArray',  array('haystack' => array('en_US', 'ru_RU', 'ro_MD', 'fr_FR')))) {
+        if (Zend_Validate::is( $this->getRequest()->getParam('locale'),  'InArray',  array('haystack' => array('en_US', 'ru_RU', 'ro_MD')))) {
             $session = new Zend_Session_Namespace('accounts');
             $session->locale = $this->getRequest()->getParam('locale');
         }

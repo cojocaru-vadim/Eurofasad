@@ -30,6 +30,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 //            }
         }
         $this->lang = $session->locale;
+        //echo $session->locale;
         $registry = Zend_Registry::getInstance();
         $registry->set('Zend_Locale', $locale);
         //print "HERE";

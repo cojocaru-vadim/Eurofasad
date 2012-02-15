@@ -13,16 +13,22 @@ class ContactController extends Zend_Controller_Action
 
     public function indexAction()
     {
+        $this->view->sent = false;
         if ($this->getRequest()->isPost()) {
             $post = $this->_request->getPost();
-//            dump($post);
-            Moldova_Utils::initiateMail($post['textarea']);
+            //            dump($post);
+            $messaga = "On ".date("Y-m-d H:i:s")." <br />
+              his/her name is: ".$post['name']." <br />
+              his/her email is: ".$post['email']." <br />
+              and he wrote: " . $post['textarea'];
+            Moldova_Utils::initiateMail($messaga);
 
             Moldova_Utils::$MAIL->addTo('cojocaru.vadim@gmail.com', "Cojocaru Vadim");
-            Moldova_Utils::$MAIL->addCC("poloboc@live.com", "Poloboc Alexandru");
-            Moldova_Utils::$MAIL->setSubject('BS code');
+            Moldova_Utils::$MAIL->setSubject('Eurofasad');
 
-            Moldova_Utils::$MAIL->send(Moldova_Utils::getSMTP());
+            //Moldova_Utils::$MAIL->send(Moldova_Utils::getSMTP());
+            Moldova_Utils::$MAIL->send();
+            $this->view->sent = true;
         }
 
     }
