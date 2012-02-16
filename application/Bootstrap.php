@@ -25,8 +25,8 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 //            try {
 //                $locale = new Zend_Locale('browser');
 //            } catch (Zend_Locale_Exception $e) {
-                $locale = new Zend_Locale('ro_MD');
-                $session->locale = 'ro_MD';
+                $locale = new Zend_Locale('ru_RU');
+                $session->locale = 'ru_RU';
 //            }
         }
         $this->lang = $session->locale;
