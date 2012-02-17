@@ -29,5 +29,20 @@ return array(
 
 /************************ MENU ITEMS ***********************/
 
+    'address'                    => '                      <p class="cols pad_bot3" style="width:73px;">
+                                                                <strong>
+                                                                    Country:<br>
+                                                                    Address:<br>
+                                                                    tel./fax.:<br>
+                                                                    Email:
+                                                                </strong>
+                                                            </p>
+                                                            <p class="pad_bot3">
+                                                                Moldova<br>
+                                                                Chisinau, st. Maria Dragan, 21 <br>
+                                                                (+373 22) 843-111, (+373 22) 843-222<br>
+                                                                <a href="mailto:">Chisinau@eurofasad.md </a>
+                                                            </p>',
+
 
 );
