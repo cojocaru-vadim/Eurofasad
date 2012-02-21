@@ -40,8 +40,9 @@ return array(
                                                             <p class="pad_bot3">
                                                                 Moldova<br>
                                                                 Chisinau, st. Maria Dragan, 21 <br>
-                                                                (+373 22) 843-111, (+373 22) 843-222<br>
-                                                                <a href="mailto:">Chisinau@eurofasad.md </a>
+                                                                +373078888030 - Alexandru<br>
+                                                                <a href="mailto:">ap@fasade.md</a><br />
+                                                                <a href="mailto:">info@fasade.md</a>
                                                             </p>',
 
 
