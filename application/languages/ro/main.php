@@ -8,32 +8,32 @@ return array(
     /************************ GENERAL ***********************/
 
     /************************ MENU ITEMS ***********************/
-    'menu-home'                  => 'Главная',
-    'menu-facade'                => 'Фасады',
-    'menu-siding'                => 'Сайдинг',
-    'menu-sofit'                 => 'Софит',
-    'menu-siding-color-chooser'  => 'Подбор цвета сайдинга',
-    'menu-walls-roofs'           => 'Стены и потолки',
-    'menu-walls-accessory'       => 'Комплектующее',
-    'menu-walls-panels'          => 'Панели ПВХ',
-    'menu-windows'               => 'Окна',
-    'menu-window'                => 'Подоконники ПВХ',
-    'menu-pipes'                 => 'Трубы',
-    'menu-pipes-accessory'       => 'Комплектующее',
-    'menu-pipes-pvs'             => 'Черепица',
-    'menu-prices'                => 'Прайсы',
-    'menu-company'               => 'Компания',
+    'menu-home'                  => 'Acasa',
+    'menu-facade'                => 'Fasade',
+    'menu-siding'                => 'Siding',
+    'menu-sofit'                 => 'Streasina',
+    'menu-siding-color-chooser'  => 'Alegem Culoare Siding',
+    'menu-walls-roofs'           => 'Peretii si POdul',
+    'menu-walls-accessory'       => 'Accesorii',
+    'menu-walls-panels'          => 'Panou PVc',
+    'menu-windows'               => 'Geamuri',
+    'menu-window'                => 'Pervazuri PVC',
+    'menu-pipes'                 => 'Трубы',                   // asta nui parca
+    'menu-pipes-accessory'       => 'Accesorii',
+    'menu-pipes-pvs'             => 'Tigla',
+    'menu-prices'                => 'Прайсы',                 //asta tot
+    'menu-company'               => 'Компания',                //asta tot
     'menu-about-company'         => 'О компании',
-    'menu-market-outlet'         => 'Рынки сбыта',
-    'menu-ebb'                   => 'Контакты',
-    'menu-contact'               => 'Отливы',
+    'menu-market-outlet'         => 'Рынки сбыта',             //asta tot
+    'menu-ebb'                   => 'Glafuri Exterioare',
+    'menu-contact'               => 'Contacte',
     'contact-name'               => 'Nume',
     'contact-email'              => 'Email',
     'contact-message'            => 'Mesaj',
     'contact-send'               => 'Trimite',
     'contact-clear'              => 'Curata',
     'contact-thank-you'          => 'Va multumim',
-    'about-h1'                   => 'Каленное стекло',
+    'about-h1'                   => 'Sticlă călită',
 
     /************************ MENU ITEMS ***********************/
 
