@@ -3,7 +3,7 @@
 return array(
 
 /************************ GENERAL ***********************/
-    'page-title'                 => 'Еврофасад',
+    'page-title'                 => 'Фасад',
 
 /************************ GENERAL ***********************/
 
@@ -20,12 +20,20 @@ return array(
     'menu-window'                => 'Подоконники ПВХ',
     'menu-pipes'                 => 'Трубы',
     'menu-pipes-accessory'       => 'Комплектующее',
-    'menu-pipes-pvs'             => 'Трубы ПВХ',
+    'menu-pipes-pvs'             => 'Черепица',
     'menu-prices'                => 'Прайсы',
     'menu-company'               => 'Компания',
     'menu-about-company'         => 'О компании',
     'menu-market-outlet'         => 'Рынки сбыта',
     'menu-contact'               => 'Контакты',
+    'menu-ebb'                   => 'Отливы',
+    'contact-name'               => 'Имя',
+    'contact-email'              => 'Email',
+    'contact-message'            => 'Сообщение',
+    'contact-send'               => 'Отправить',
+    'contact-clear'              => 'Очистить',
+    'contact-thank-you'          => 'Благодарим вас',
+    'about-h1'                   => 'Каленное стекло',
 
 /************************ MENU ITEMS ***********************/
 

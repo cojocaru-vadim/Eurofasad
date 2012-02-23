@@ -3,7 +3,7 @@
 return array(
 
 /************************ GENERAL ***********************/
-    'page-title'                 => 'Eurofasad',
+    'page-title'                 => 'Facade',
 
 /************************ GENERAL ***********************/
 
@@ -20,12 +20,20 @@ return array(
     'menu-window'                => 'PVC Window sills',
     'menu-pipes'                 => 'Pipes',
     'menu-pipes-accessory'       => 'Pipes accessory',
-    'menu-pipes-pvs'             => 'Pipes PVS',
+    'menu-pipes-pvs'             => 'Tile',
     'menu-prices'                => 'Prices',
     'menu-company'               => 'Company',
     'menu-about-company'         => 'About company',
     'menu-market-outlet'         => 'Market outlet',
     'menu-contact'               => 'Contacts',
+    'menu-ebb'                   => 'Ebb',
+    'contact-name'               => 'Name',
+    'contact-email'              => 'Email',
+    'contact-message'            => 'Message',
+    'contact-send'               => 'Send',
+    'contact-clear'              => 'Clear',
+    'contact-thank-you'          => 'Thank you',
+    'about-h1'                   => 'Каленное стекло',
 
 /************************ MENU ITEMS ***********************/
 
