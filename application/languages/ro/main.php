@@ -52,17 +52,13 @@ return array(
                                                                 <a href="mailto:">ap@fasade.md</a><br />
                                                                 <a href="mailto:">info@fasade.md</a>
                                                             </p>',
+
     'about'                         => '
-                                        <p>Торговая марка "Welltech innovations" - успешно зарекомендовавшее себя имя на рынке производителей декоративных отделочных пластиковых материалов, а так же друих погонажных изделий из поливинилхлоридных (ПВХ) композиций.</p>
-
-                                        <p>Наша торговая марка это объедененный многолетний опыт трёх крупнейших заводов по производству изделий из пластика.</p>
-
-                                        <p>Продукция, выпускаемая под торговой маркой "Welltech innovations" производится по современным технологиям на новом импортном оборудовании с применением самых передовых научных разработок в системе контроля качества и нанесения декоративного покрытия.</p>
-
-                                        <p>Продукция "Welltech" изготавливается из ПВХ с применением различных лояльных химических добавок (аддитивов), обеспечивающих пластичность и термостойкость изделий. В своём производстве, мы используем первичное сырьё, и только лучшие компоненты ведущих мировых производителей.</p>
-
-                                        <p>Мы готовы предложить разнообразие размеров и ассортимент различных фассадных декоров, которые смогут удовлетворить вкус даже самого взыскательного покупателя. Вся продукция сертифицирована соответствует нормам и требованиям государственных стандартов.</p>
+            <p>Compania Fasad – s-a dezvoltat cu succes pe piaţa ucraineană şi foarte bine s-a dovedit  a fi pe piaţa de finisaje decorative din materiale plastice, precum şi alte produse turnate din policlorură de vinil şi (PVC) compoziţii.</p>
+            <p>Produsele noastre sunt combinate de ani de experienţă în cele mai mari trei fabrici pentru producerea de produse din material plastic.</p>
+            <p>Produsele oferite pentru dumneavoastra, sunt produse din cele mai perfomante tehnologii şi noi echipamente importate, fiind cercetate ştiinţific în cel mai avansat sistem de control al calităţii .</p>
+            <p>Toate produsele care sunt produse de noi sunt  din  material PVC, cu aditivi chimici diferiţi fideli (aditivi), oferind flexibilitate şi  termo izolare constructiei. In producerea materialului ,noi folosim numai materie primă de calitate înaltă, şi numai cele mai bune componente a producatorilor mondiali.</p>
+            <p>Noi oferim o varietate de dimensiuni şi un set de decoratiuni de faţadă diferite, care pot satisface gustul chiar şi la cei mai pretenţioşi clienţi. Toate produsele sunt  în conformitate cu cerinţele standardelor de stat.</p>
     ',
-
 
 );
