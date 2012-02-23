@@ -24,8 +24,8 @@ class ContactController extends Zend_Controller_Action
             Moldova_Utils::initiateMail($messaga);
 
             Moldova_Utils::$MAIL->addTo('cojocaru.vadim@gmail.com', "Cojocaru Vadim");
-            Moldova_Utils::$MAIL->addTo('r.necvetaev@ef-md.com', "Necvetaev Ruslan");
-            Moldova_Utils::$MAIL->setSubject('Eurofasad');
+            //Moldova_Utils::$MAIL->addTo('r.necvetaev@ef-md.com', "Necvetaev Ruslan");
+            Moldova_Utils::$MAIL->setSubject('Fasade.md');
 
             //Moldova_Utils::$MAIL->send(Moldova_Utils::getSMTP());
             Moldova_Utils::$MAIL->send();

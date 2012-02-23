@@ -1,2 +1,2 @@
-Cufon.replace('.text1, .button', { fontFamily: 'Myriad Pro', hover:true });
+Cufon.replace('.text1', { fontFamily: 'Myriad Pro', hover:true });
 
