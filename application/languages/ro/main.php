@@ -13,7 +13,7 @@ return array(
     'menu-siding'                => 'Siding',
     'menu-sofit'                 => 'Streasina',
     'menu-siding-color-chooser'  => 'Alegem Culoare Siding',
-    'menu-walls-roofs'           => 'Peretii si POdul',
+    'menu-walls-roofs'           => 'Peretii si plafon',
     'menu-walls-accessory'       => 'Accesorii',
     'menu-walls-panels'          => 'Panou PVc',
     'menu-windows'               => 'Geamuri',
