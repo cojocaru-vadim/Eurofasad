@@ -48,8 +48,7 @@ return array(
                                                             <p class="pad_bot3">
                                                                 Moldova<br>
                                                                 Chisinau, st. Maria Dragan <br>
-                                                                +373 69142440 - Alexandru<br>
-                                                                <a href="mailto:">ap@fasade.md</a><br />
+                                                                +373 69527900 (79527900) - Vitalic<br>
                                                                 <a href="mailto:">info@fasade.md</a>
                                                             </p>',
     'about'                         => '
